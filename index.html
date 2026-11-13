@@ -10,9 +10,10 @@
 
   body{
   text-align: center;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIibufh7XwUERt2p_sBEtJpX-k7tUdHBvVG-QyFHVYlneLq9qH80ZVd3B&s=10);
+  background-image: url(https://images.squarespace-cdn.com/content/v1/664c7ae50eea9c731b37e817/fdabba98-61bf-4946-a1e2-246c208f13f8/1+20240226_094559+copy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 125%;
   }
 
 .container1{
@@ -24,6 +25,10 @@
   margin: auto;
   display: block;
 
+}
+
+h1, h5{
+  color: white;
 }
 
 </style>
@@ -57,58 +62,114 @@
 
 <br><br>
 
+<div class="container4">
 <h1>OBMC Student Enrollment Form</h1>
 <br>
 <h5>Fill out the form below to enroll for the upcoming school year.</h5>
+</div>
 
 <br><br>
 
 <div class="container1">
     <div class="container-fluid m-0 p-0">
+      <div class="container2">
+
         <h3>Student Information</h3>
-        <!--placeholder-->
+
+        <br>
 
         <div class="row">
           <div class="col">
           <form action="">
-          <span id="label"><label for="uname">First Name:</label></span>
+          <span id="label"><label for="fname">First Name:</label></span>
           <br>
-          <input type="text" id="uname" name="uname" placeholder="" required>
+          <input type="text" id="fname" name="fname" placeholder="Tung Tung" required>
           </div>
 
           <div class="col">
           <form action="">
-          <span id="label"><label for="uname">Last Name:</label></span>
+          <span id="label"><label for="lname">Last Name:</label></span>
           <br>
-          <input type="text" id="uname" name="uname" placeholder="" required>
+          <input type="text" id="lname" name="lname" placeholder="Sahur" required>
           </div>
         </div>
+
+        <div class="row">
+
+          <div class="col">
+          <!--This is the birthday part.-->
+          <span id="label"><label for="pword">Birthday</label></span>
+                <br>
+                <input type="password" id="pword" name="pword" placeholder="mm/dd/yyyy" required>
+          </div>
+
+          <div class="col">
+          <!--placeholder-->
+          <label for="gender">Gender</label>
+                <br>
+                <input type="radio" id="gender1" name="gender" value="male">
+                <label for="gender1">Male</label>
+
+                <input type="radio" id="gender2" name="gender" value="female">
+                <label for="gender2">Female</label>
+          </div>
+
+          <div class="col">
+          <!--placeholder-->
+          <label for="section">Grade Level:</label>
+                <br>
+                <select id="level">
+                    <option value="Grade7">Grade 7</option>
+                    <option value="Grade8">Grade 8</option>
+                    <option value="Grade9">Grade 9</option>
+                    <option value="Grade10">Grade 10</option>
+
+                </select>
+          </div>
+        </div>
+      </div>
 
         <br><br>
 
         <h3>Contact Details</h3>
+
+        <br>
+
         <!--placeholder-->
         <span id="label"><label for="email">Email:</label></span>
         <br>
-        <input type="text" id="email" name="email" placeholder="" required>
+        <input type="text" id="email" name="email" placeholder="student@example.com" required>
+
+        <div class="col">
+          <form action="">
+          <span id="label"><label for="number">Number:</label></span>
+          <br>
+          <input type="number" id="number" name="number" placeholder="0912-345-6789" required>
+        </div>
+
+        </div>
 
         <br><br>
 
-
+      <div class="container3">
         <h3>Other Information</h3>
-        
-        <h4>Mode of Learning</h4>
-        <ol>
-          <li>Online</li>
-          <li>Face to Face</li>
-        </ol>
-        <p>I confirm that the information provided is true and complete.</p>
 
+        <br>
+
+        <h4>Mode of Learning</h4>
+        <br>
+        <h6>Online</h6>
+        <h6>Face to Face</h6>
+        <br>
+        <input type="radio" id="yeso" name="yes" value="yes" required>
+        <label for="yes">I confirm that the information provided is true and complete.</label>
+      
         <br><br>
+      </div>
+
+      <button type="submit" id="btn" name="btn">Submit</button>
 
     </div>
 </div>
 
 </body>
-
-<!--UNFINISHED.--!>
